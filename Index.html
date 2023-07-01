@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>Your Website Title</title>
     <meta name="description" content="Your Website Description">
     <meta name="keywords" content="Your,Website,Keywords">
@@ -11,7 +12,7 @@
 </head>
 <body>
     <!-- Sticky Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top;" style="background-color: #33445e;">
         <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" width="30" height="30"> Your Title</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,10 +27,10 @@
     </nav>
 
     <!-- Content -->
-    <div class="container">
+    <div class="container mt-5">
         <h1>Add a Course</h1>
         <form id="add-course-form">
-            <div class="form-group">
+            <div class="form-group mt-4">
                 <label for="course-name">Course Name</label>
                 <input type="text" class="form-control" id="course-name" placeholder="Enter course name">
             </div>
@@ -39,14 +40,22 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        <div class="form-group mt-5">
+	<div class="container-fluid my-5">
+  	   <div class="row">
+    		<div class="col">
+      		   <hr style="height: 7px; width: 100%; background-color:#aec6eb; margin:auto">
+		   <hr style="height: 7px; width: 100%; background-color:#d1e3ff; margin:auto">
+    		</div>
+  	   </div>
+	</div>
+        <div class="form-group my-5">
             <label for="sort-select">Sort By:</label>
             <select class="form-control" id="sort-select">
                 <option value="name">Course Name</option>
                 <option value="description">Course Description</option>
             </select>
         </div>        
-        <table class="table mt-5" id="courses-table">
+        <table class="table my-5" id="courses-table">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -58,10 +67,18 @@
             <tbody>
             </tbody>
         </table>
-    </div>
-
+    
+    <div class="container-fluid my-5">
+  	   <div class="row">
+    		<div class="col">
+      		   <hr style="height: 7px; width: 100%; background-color:#d1e3ff; margin:auto">
+		   <hr style="height: 7px; width: 100%; background-color:#aec6eb; margin:auto">
+    		</div>
+  	   </div>
+	</div>
+	</div>
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 bg-dark text-white">
+    <footer class="footer mt-auto py-3 text-white" style="background-color: #33445e;">
         <div class="container text-center">
             <img src="logo.png" alt="Logo" width="30" height="30">
             <p>© 2023 Jacob & Milena. All rights reserved.</p>
